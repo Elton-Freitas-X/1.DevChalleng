@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: inline
+}
+
+nav div {
+    float: left;
+    margin: 3rem 6rem;
+}
+
+nav div:nth-child(2){
+    float: right;
+    margin: 3rem 6rem;
+}
+
+
+nav div h3{
+    color: #D2872C;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav div ul {
+    list-style: none;
+
+}
+
+nav div ul li{
+    transition: 1s;
+}
+
+nav div ul li a {
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+    transition: .9s;
+}
+
+nav div ul li a:hover {
+    color: #fffC;
+    background-color: rgb(83, 82, 82);
+    border-radius: 5px;
+}
+
+
+/**main*/
+
+main{
+    display: flex;
+    height: 82vh;
+    width: 95%;
+    padding: 0rem 6rem;
+    background-image: url(./assets/team.jpg);
+    background-size: 68% 87%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+
+main div  h1 {
+    font-size: 2.6rem;
+    color: #D2872C;
+}
+
+main div  h3 {
+   font-size: 1.5rem;
+   color: rgb(83, 82, 82);
+}
+
+main div  button {
+    
+}
