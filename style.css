@@ -85,5 +85,10 @@ main div  h3 {
 }
 
 main div  button {
-    
+    background: orange;
+    border: none;
+    width: 17.5rem;
+    height: 4rem;
+    border-radius: 35px;
+    color: #fff;
 }
