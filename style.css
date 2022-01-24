@@ -69,26 +69,29 @@ main div {
     display: flex;
     flex-direction: column;
     height: 77vh;
-    width: 40%;
+    width: 33%;
     justify-content: space-evenly;
 }
 
 
 main div  h1 {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     color: #D2872C;
 }
 
 main div  h3 {
-   font-size: 1.5rem;
-   color: rgb(83, 82, 82);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #766F68;
 }
 
 main div  button {
-    background: orange;
+    background: #D2872C;
+    font-size: 1.4rem;
+    font-weight: 500;
     border: none;
     width: 17.5rem;
     height: 4rem;
-    border-radius: 35px;
+    border-radius: 15px;
     color: #fff;
 }
