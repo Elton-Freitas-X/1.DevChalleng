@@ -2,96 +2,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
-nav {
-    display: inline
-}
-
-nav div {
-    float: left;
-    margin: 3rem 6rem;
-}
-
-nav div:nth-child(2){
-    float: right;
-    margin: 3rem 6rem;
-}
-
-
-nav div h3{
-    color: #D2872C;
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: center;
-}
-
-nav div ul {
-    list-style: none;
-
-}
-
-nav div ul li{
-    transition: 1s;
-}
-
-nav div ul li a {
-    text-align: center;
-    padding: 0 1rem;
-    font-size: 1.4rem;
-    color: rgb(83, 82, 82);
+a {
     text-decoration: none;
-    transition: .9s;
 }
 
-nav div ul li a:hover {
-    color: #fffC;
-    background-color: rgb(83, 82, 82);
-    border-radius: 5px;
+:root {
+    --primary: #D2872C;
+    --scundary: #766F68;
 }
 
 
-/**main*/
-
-main{
+#header {
     display: flex;
-    height: 82vh;
-    width: 95%;
-    padding: 0rem 6rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    margin: 1.8rem 2.2rem 0 2.2rem;
+}
+
+#header #logo{
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    padding: .5rem;
+    font-size: 1.8rem;
+    color: var(--scundary);
+    font-weight: 400;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+main {
+    height: 73vh;
     background-image: url(./assets/team.jpg);
-    background-size: 68% 87%;
+    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position-x: right;
+    background-position-y: bottom;
+    background-size: 70% 88%;
 }
 
-main div {
-    display: flex;
-    flex-direction: column;
-    height: 77vh;
-    width: 33%;
-    justify-content: space-evenly;
-}
+@media (max-width: 940px) {
+    main{
+        background-size: 74% 83%;
+        background-position-y: bottom;
+        height: 72vh;
+ }
 
+    #menu {
+    display: block;
+    position: absolute;
+    width: 0;
+   
+    right: 0px;
+    top: 5rem;
+    display: block;
+    text-align: center;
+    z-index: 1000;
+    height: 0;
+    transition: .6s;
+    visibility: hidden;
+    overflow-x: hidden;
+  }
 
-main div  h1 {
-    font-size: 3.6rem;
-    color: #D2872C;
-}
+  #header #logo{
+      color: var(--primary);
+      font-weight: 900;
+  }
 
-main div  h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #766F68;
-}
+  #nav.active #menu { 
+    height: 80%;
+    visibility: visible;
+    overflow-x: auto;
+    width: 15%;
+  }
 
-main div  button {
-    background: #D2872C;
-    font-size: 1.4rem;
+  #menu li a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    line-height: 5;
+    color: var(--scundary);
     font-weight: 500;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding:  .5rem 1rem;
     border: none;
-    width: 17.5rem;
-    height: 4rem;
-    border-radius: 15px;
-    color: #fff;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+    
+#btn-mobile i {
+    font-size: 1.5rem;
+    color: var(--scundary);
+}
+
 }
