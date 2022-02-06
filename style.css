@@ -145,10 +145,31 @@ a {
     color: var(--scundary);
 }
 
-
+.container {
+    background-size: 65% 88%;
 }
 
-@media (max-width: 850px) {
+main .content2 {
+    height: 83%;
+}
+ 
+main .content2 h1 {
+    font-size: 3.8rem;
+    width: 600px;
+}
+
+main .content2 p {
+    font-size: 1.3rem;
+    font-weight: 100;
+    width: 300px;
+}
+
+main .content2 button{
+    width: 230px;
+}
+}
+
+@media (max-width: 760px) {
     #header a#logo {
         font-size: 2rem;
     }
@@ -162,23 +183,23 @@ a {
     }
 
     .container{
-        background-size: 63% 89%;
-        height: 70vh;
+            background-size: 63% 89%;
+            height: 65vh;
     }
 
-    .content2 h1{
-        width: 600px;
-        font-size: 3.6rem;
-    }
-
-    .content2 p {
+    main .content2 h1{
+        font-size: 3.5rem;
         width: 400px;
-        font-size: 1.6rem;
     }
 
-    .content2 button{
+    main .content2 p {
+        font-size: 1.4rem;
+        width: 400px;
+    }
+
+    main .content2 button{
         font-size: 1rem;
-        width: 280px;
+        width: 250px;
     }
 }
 
